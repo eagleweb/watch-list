@@ -11,3 +11,8 @@
     background-color: #f3f3f3;
     min-height: 100px;
 }
+
+.a-menu{
+    float:none;
+    display:inline-block;
+}

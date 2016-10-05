@@ -20,13 +20,16 @@
 <body>
 <div class="container-fluid">
     <div id="head-nav" class="row">
-        <div class="col-md-12">Logo</div>
+        <div class="col-md-12" style="text-align: center">
+                <ul class="nav nav-pills a-menu">
+                    <li><a href="#/">Main</a></li>
+                    <li><a href="#/about">About</a></li>
+                </ul>
+        </div>
     </div>
 
     <div id="small-nav" class="row">
         <div class="col-md-2">
-            <a href="#/about">About</a>
-            <a href="#/">Main</a>
         </div>
         <div class="col-md-8" ng-view></div>
         <div class="col-md-2">Statistic</div>
