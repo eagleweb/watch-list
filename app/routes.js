@@ -2,7 +2,7 @@ angular.module('WatchList')
     .config(function($routeProvider){
         $routeProvider
             .when('/', {
-                templateUrl: 'template/index.html',
+                templateUrl: 'template/main.html',
                 controller : 'Homepage'
             })
             .when('/about', {
