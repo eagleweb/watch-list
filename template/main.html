@@ -1,6 +1,6 @@
-<div ng-repeat="film in Homepage>
-    <h2>{{film.Title}}</h2>
-    <img src="{{film.Poster}}" height="250">
-    <b>Year:</b> {{film.Year}}
-    <b>Released on:</b> {{film.Released}}
+<div ng-repeat="films in dbfilms">
+    <h2>{{films.Title}}</h2>
+    <img src="{{films.Poster}}" height="250">
+    <b>Year:</b> {{films.Year}}
+    <b>Released on:</b> {{films.Released}}
 </div>

@@ -1,8 +1,6 @@
 angular.module('WatchList')
-    .controller('Homepage', [$http, function ($http) {
-        var store = this;
-        store.films = [];
+    .controller('Homepage', function ($scope, $http) {
         $http.get('dbFilms.json').success(function (data) {
-            store.films = data;
+            $scope.dbfilms = data;
         });
-    }]);
+    });
