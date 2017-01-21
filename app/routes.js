@@ -1,12 +1,34 @@
 angular.module('WatchList')
-    .config(function($routeProvider){
-        $routeProvider
-            .when('/', {
-                templateUrl: 'template/main.html',
-                controller : 'Homepage'
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('home', {
+                url: '/',
+                views: {
+                    '': {
+                        templateUrl: 'app/main-content/main.html',
+                        controller: 'Homepage'
+                    },
+                    'static': {
+                        template: 'Hey there!!!'
+                    },
+                    'menu': {
+                        templateUrl: 'app/menu.html',
+                        controller: 'Homepage'
+                    }
+                }
+
             })
-            .when('/about', {
-                templateUrl: 'template/about.html',
-                controller : 'About'
+            .state('about',{
+                url: '/about',
+                views: {
+                    '': {
+                        templateUrl: 'app/about/about.html',
+                        controller: 'About'
+                    },
+                    'static': {
+                        template: 'Hey there about!!!'
+                    }
+                }
             });
+        $urlRouterProvider.otherwise('/');
     });

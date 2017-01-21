@@ -1,1 +1,1 @@
-angular.module('WatchList', ['ngRoute'])
+angular.module('WatchList', ['ui.router']);
